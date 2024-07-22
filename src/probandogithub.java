@@ -43,6 +43,9 @@ public class probandogithub {
            Tipo de dato  identificador(nombre de la variable);
                Ej.
                     String nombreAlumno;
+             
+         ASIGNAR DATOS
+             1)
          
          */
          
