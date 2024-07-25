@@ -12,22 +12,45 @@ public class EstructuraCondicional {
         /*
         estructuras condicionqales
         
-        SIMPLE
+        1-SIMPLE
         
-        DOBLE
+        2-DOBLE
         
-        ANIDADA
+        3-ANIDADA
         
         SINTAXIS
         
         *Conectivos logicos:unen las pruebas logicas. " || = or " , " && = and "*
         
-        if(pruebas logicas){
+        1-if(pruebas logicas){
         
-        Bloque de Codigo
+        Bloque de Codigo - true
+        
+        }
+        
+        2-if(pruebas logicas){
+        
+        Bloque de Codigo - true
+        
+        }else{
+        
+        Bloque de Codigo - false
+        
+        }
+        
+        3-if(pruebas logicas){
+        
+        if(pruebas logicas){
+        Bloque de codigo
+        }else if(pruebas logicas){
+        
+        }
         
         }
       
         */
+        
+        
+        
     }
 }

@@ -15,6 +15,10 @@ public class DatosAlumnosDT {
          Scanner lea=new Scanner(System.in);
          lea.useDelimiter("\n");
          
+         //variables
+         String resultado="Nota No Registrada";
+         
+         
          //Solicitud de datos
          System.out.println("Ingrese el numero de cuenta del Alumno:");
          int CuentaAlumno=lea.nextInt();
@@ -37,6 +41,20 @@ public class DatosAlumnosDT {
          //proceso
          double promedio=(nota1+nota2)/2;
          
+         //condicionales 
+         
+         
+         
+         if(promedio<59.5 && promedio>0){
+             resultado="Insuficiente";
+         }else if(promedio>=59.5 && promedio<80){
+             resultado="Notable";
+         }else if(promedio>80 && promedio<=90){
+             resultado="Muy bueno";
+         }else if(promedio>90 && promedio<=100){
+             resultado="Excelente";
+         }
+         
          //salida pantalla
          System.out.println("----Datos del Alumno----");
          System.out.println("Numero de Cuenta: "+CuentaAlumno);
@@ -45,7 +63,7 @@ public class DatosAlumnosDT {
          System.out.println("Edad: "+edad);
          System.out.println("Nota#1: "+nota1);
          System.out.println("Nota#2: "+nota2);
-         System.out.println("Promedio: "+promedio+" %");
+         System.out.println("Promedio: "+promedio+" %"+" "+resultado);
 
          
         
