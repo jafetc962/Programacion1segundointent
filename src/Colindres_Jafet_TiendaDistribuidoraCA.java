@@ -35,6 +35,9 @@ public class Colindres_Jafet_TiendaDistribuidoraCA {
          inventarioProducto4=inventarioProducto4+CantidadProducto4;
          int codigoProducto=0;
          int PrecioCompras;
+         int tipoCliente=0;
+         int cantidadProductoCliente=0;
+         int precioVentas;
          
          
          //loop menu
@@ -80,7 +83,110 @@ public class Colindres_Jafet_TiendaDistribuidoraCA {
                
                
            }else if(menu==2){
-            System.out.println("----Ventas----");   
+            System.out.println("----Ventas----"); 
+            
+            
+            //ingreso de tipo proveedor
+               System.out.println("Ingrese el tipo de cliente:");
+               
+               System.out.println("1->A");
+             System.out.println("2->B");
+             System.out.println("3->C");
+             tipoCliente=lea.nextInt();
+             
+             
+             //Accion no valida
+             while(tipoCliente<1 || tipoCliente>3){
+                 System.out.println("Accion invalida, Ingresar numeros del 1 al 3");
+                 System.out.println("Ingrese el tipo de cliente:");
+               
+               System.out.println("1->A");
+             System.out.println("2->B");
+             System.out.println("3->C");
+             tipoCliente=lea.nextInt();
+             }
+            
+            
+            //Seleccion productos de acuerdo a tipo cliente
+            
+            //ProveedorA
+             if(tipoCliente==1){
+                 System.out.println("Productos disponibles para cliente A:");
+                 
+             System.out.println("Codigo: 1 -> Azucar -> Precio = lps.30");
+             System.out.println("Codigo: 2 -> Avena -> Precio = lps.25");
+             System.out.println("Codigo: 3 -> Trigo -> Precio = lps.32");
+             System.out.println("Codigo: 4 -> Maiz -> Precio = lps.20");
+             System.out.println("Ingrese el Codigo del producto:");
+             codigoProducto=lea.nextInt();
+             
+             //Accion Invalida
+             while(codigoProducto<1 && codigoProducto>4 ){
+                 System.out.println("Accion invalida, Ingresar numeros 1 o 4");
+               System.out.println("Codigo: 1 -> Azucar -> Precio = lps.30");
+               System.out.println("Codigo: 2 -> Avena -> Precio = lps.25");
+             System.out.println("Codigo: 3 -> Trigo -> Precio = lps.32");
+             System.out.println("Codigo: 4 -> Maiz -> Precio = lps.20");
+             System.out.println("Ingrese el Codigo del producto:");
+             codigoProducto=lea.nextInt();   
+             }
+                 
+             
+             
+             //Producto1
+             if(codigoProducto==1){
+                 precioVentas=0;
+                 System.out.println("Codigo: 1 -> Azucar -> Precio = lps.30");
+                 System.out.println("Ingrese la cantidad (EN KILOGRAMOS):");
+                 cantidadProductoCliente=lea.nextInt();
+                 precioVentas=cantidadProductoCliente*30;
+                 System.out.println("Efectivo en caja: "+ingresoCCaja);
+                 System.out.println("Total a pagar: "+precioVentas);
+                 if(ingresoCCaja>=precioVentas ){
+                     ingresoCCaja=ingresoCCaja-precioVentas;
+                 }else{
+                     System.out.println("No Se Puede Pagar Compra");
+                 }}
+                 //Producto4
+                  if(codigoProducto==4){
+                     PrecioCompras=0;
+                     System.out.println("Codigo: 4 -> Maiz -> Precio = lps.20");
+                 System.out.println("Ingrese la cantidad (EN KILOGRAMOS):");
+                 CantidadProducto4=lea.nextInt();
+                 PrecioCompras=CantidadProducto4*18;
+                 System.out.println("Efectivo en caja: "+ingresoCCaja);
+                 System.out.println("Total a pagar: "+PrecioCompras);
+                 if(ingresoCCaja>=PrecioCompras){
+                     ingresoCCaja=ingresoCCaja-PrecioCompras;
+                 }else{
+                     System.out.println("No Se Puede Pagar Compra");
+                 }
+             
+             }
+             
+             
+             
+             
+             
+             
+             
+             }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
            
            }else if(menu==3){
             System.out.println("----COMPRAS----"); 
