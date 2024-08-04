@@ -44,7 +44,7 @@ public class Colindres_Jafet_TiendaDistribuidoraCA {
          
          while(menu!=6){
              
-             //m3nu opciones
+             //menu opciones
              System.out.println("Bienvenido a la Tienda y Distribuidora CA");
              System.out.println("----MENU----");
              System.out.println("1->ABRIR CAJA");
@@ -56,6 +56,7 @@ public class Colindres_Jafet_TiendaDistribuidoraCA {
              System.out.println("Seleccione un menu:");
              menu=lea.nextInt();
              
+             //accion invalida
              while(menu<1 || menu>6){
                System.out.println("Accion invalida, Ingresar numeros del 1 al 6");
                System.out.println("----MENU----");
@@ -109,7 +110,7 @@ public class Colindres_Jafet_TiendaDistribuidoraCA {
             
             //Seleccion productos de acuerdo a tipo cliente
             
-            //ProveedorA
+            //Cliente A
              if(tipoCliente==1){
                  System.out.println("Productos disponibles para cliente A:");
                  
