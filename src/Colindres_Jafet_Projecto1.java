@@ -10,8 +10,8 @@ import java.util.Scanner;
  *
  * @author HP
  */
-public class Colindres_Jafet_TiendaDistribuidoraCA {
-       public static void main(String[] args) {
+public class Colindres_Jafet_Projecto1 {
+    public static void main(String[] args) {
          Scanner lea=new Scanner(System.in);
         lea.useDelimiter("\n");
          
@@ -930,4 +930,5 @@ public class Colindres_Jafet_TiendaDistribuidoraCA {
          System.out.println("\nTienda y Distribuidora CA");
          System.out.println("\nGracias por usar nuestros servicios");
          System.out.println("\nY disfrute de un esplendido dia");
-}}
+}
+}
